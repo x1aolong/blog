@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link key="index" href="/static/index/css/details.css" rel="stylesheet" type="text/css" />
+		<link key="index" href="/static/index/css/header.css" rel="stylesheet" type="text/css" />
+		<link key="index" href="/static/index/css/footer.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+	{include file="pub/heater"}
+     <!--讲师部分-->
+     <div class="tacher_js">
+     		<div class="tacher_img">
+     			 <img src="/static/index/images/tu.jpg">
+     		</div>	
+     		<div class="tacher_img_right">
+     			  <div class="tacher_name">
+					  <p><span>屠呦呦</span><span style="margin-left: 50px">药学家</span></p>
+     			  </div>
+     			  <div class="tacher_zc">
+						<p>简介：屠呦呦，女，汉族，中共党员，药学家。1930年12月30日生于浙江宁波，1951年考入北京大学，在医学院药学系生药专业学习。 [1-2]  1955年，毕业于北京医学院（今北京大学医学部）。毕业后曾接受中医培训两年半，并一直在中国中医研究院（2005年更名为中国中医科学院）工作，期间前后晋升为硕士生导师、博士生导师，现为中国中医科学院的首席科学家</p>
+     			  </div>
+     		</div>	
+     </div>
+	 <!--讲师课程-->
+
+	<!--全部-->
+		 	<div class="tacher_kc">
+				<div class="tacher_kc_name">
+					<ul>
+						<li onClick="changeDisplay(1)">全部</li>
+						<li onClick="changeDisplay(2)">最新更新</li>
+						<li onClick="changeDisplay(3)">人气最高</li>
+					</ul>
+				</div>
+				<div class="tacher_kc_sp" id="qb">
+					  <div class="tacher_kc_sp1">
+							<div class="tacher_kc_spimg"></div>
+							<div class="tacher_kc_sptitle">
+								<p>标题</p>
+								<ul>
+									<li>讲师：屠呦呦</li>
+									<li>分类：政府公共管理</li>
+									<li>发布时间：</li>
+									<li>时长：</li>
+									<li>课件数：</li>
+									<li>学时：</li>
+									<li>获赞：</li>
+								</ul>
+							</div>
+					  </div>
+						<div class="tacher_kc_sp1">
+							<div class="tacher_kc_spimg"></div>
+							<div class="tacher_kc_sptitle">
+								<p>标题</p>
+								<ul>
+									<li>讲师：屠呦呦</li>
+									<li>分类：政府公共管理</li>
+									<li>发布时间：</li>
+									<li>时长：</li>
+									<li>课件数：</li>
+									<li>学时：</li>
+									<li>获赞：</li>
+								</ul>
+							</div>
+					  </div>
+				</div>
+
+				<!--最新更新-->
+				<div class="tacher_kc_sp" style="display: none"; id="zx">
+					<div class="tacher_kc_sp1">
+						<div class="tacher_kc_spimg"></div>
+						<div class="tacher_kc_sptitle">
+							<p>标题1</p>
+							<ul>
+								<li>讲师：屠呦呦</li>
+								<li>分类：政府公共管理</li>
+								<li>发布时间：</li>
+								<li>时长：</li>
+								<li>课件数：</li>
+								<li>学时：</li>
+								<li>获赞：</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tacher_kc_sp1">
+						<div class="tacher_kc_spimg"></div>
+						<div class="tacher_kc_sptitle">
+							<p>标题</p>
+							<ul>
+								<li>讲师：屠呦呦</li>
+								<li>分类：政府公共管理</li>
+								<li>发布时间：</li>
+								<li>时长：</li>
+								<li>课件数：</li>
+								<li>学时：</li>
+								<li>获赞：</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--人气最高-->
+				<div class="tacher_kc_sp" style="display: none"; id="rq">
+					<div class="tacher_kc_sp1">
+						<div class="tacher_kc_spimg"></div>
+						<div class="tacher_kc_sptitle">
+							<p>标题2</p>
+							<ul>
+								<li>讲师：屠呦呦</li>
+								<li>分类：政府公共管理</li>
+								<li>发布时间：</li>
+								<li>时长：</li>
+								<li>课件数：</li>
+								<li>学时：</li>
+								<li>获赞：</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tacher_kc_sp1">
+						<div class="tacher_kc_spimg"></div>
+						<div class="tacher_kc_sptitle">
+							<p>标题</p>
+							<ul>
+								<li>讲师：屠呦呦</li>
+								<li>分类：政府公共管理</li>
+								<li>发布时间：</li>
+								<li>时长：</li>
+								<li>课件数：</li>
+								<li>学时：</li>
+								<li>获赞：</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		 	</div>
+
+
+
+       	<!--底部-->
+		{include file="pub/footer"}
+
+
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script src="/static/index/js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function changeDisplay(num){
+			console.log(num);
+			if (num == 1) { // 点击平语近人
+				$('#qb').show();
+				$('#zx').hide();
+				$('#rq').hide();
+			} else if (num == 2) { // 点击党政学习
+				$('#qb').hide();
+				$('#zx').show();
+				$('#rq').hide();
+			} else if (num == 3) { // 点击政策指导
+				$('#qb').hide();
+				$('#zx').hide();
+				$('#rq').show();
+			}
+		}
+	</script>
+	</body>
+</html>

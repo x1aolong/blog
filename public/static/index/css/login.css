@@ -1,0 +1,110 @@
+        @charset "utf-8";
+        *{margin: 0;padding: 0;}
+        body{
+            width:100%;
+            /*height:5000px;*/
+            margin:0 auto;
+            background: #F2F2F2;
+        }
+        .login{
+            width: 1200px;
+            height: 650px;
+            margin: 0 auto ;
+            margin-top: 160px;
+            background-color: #FFFFFF;
+        }
+        .login_top{
+            padding-top: 50px;
+            width: 300px;
+            height: 60px;
+            margin: 0 auto ;
+            
+        }
+        .login_top ul li{
+            height: 30px;
+            font-size: 15px;
+            float: left;
+            list-style: none;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        .login_top ul li:hover {
+            border-bottom: 2px solid #4DA742;
+        }
+        .sm{
+
+            width: 200px;
+            height: 280px;
+            margin: 0 auto;
+            
+            text-align: center;
+        }
+        .user{
+            display: none;
+            width: 400px;
+            height: 280px;
+            margin: 0 auto;
+            
+            text-align: center;
+        }
+        .sm img{
+            width: 160px;
+            height: 160px;
+        }
+        .sm span{
+            font-size: 15px;
+        }
+        .order{
+            height: 60px;
+            text-align: center;
+            
+        }
+        .order .line {
+            display: inline-block;
+            width: 538px;
+            border-top: 1px solid #ccc ;
+        }
+        .order .txt {
+            color: #686868;
+            vertical-align: middle;
+        }
+        .login3{
+            width: 300px;
+            height: 50px;
+            margin: 0 auto ;
+        }
+        .login3 img{
+            margin-left: 30px;
+            width: 20px;
+            height: 25px;
+        }
+        .user1{
+            width: 100%;
+            height: 68px;
+            
+        }
+        .user1 a{
+            margin-left: 270px;
+            text-decoration:none;
+            color: #C7C7C7;
+            font-size: 10px;
+
+        }
+        .form-control{
+            width: 330px;
+            height: 28px;
+            border: 0.5px solid #B6B6B6;
+            border-radius: 5px;
+        }
+        .btn{
+            width: 230px;
+            height: 30px;
+            text-decoration: none;
+            background-color: #23B900;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            color: #fff;
+            border-radius: 5px;
+        }

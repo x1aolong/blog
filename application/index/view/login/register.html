@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+            <link key="index" href="/static/index/css/register.css" rel="stylesheet" type="text/css" />
+            <link key="index" href="/static/index/css/footer.css" rel="stylesheet" type="text/css" />
+            <link key="index" href="/static/index/css/header.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+        {include file="pub/heater"}
+
+        <div class="register">
+            <div class="register_top">
+                <ul>
+                    <li onclick="changeDisplay(1)">学员注册</li>
+                    <li onclick="changeDisplay(2)">单位注册</li>
+                </ul>
+            </div>
+<!--            学员注册-->
+            <div class="register_but" id="xy">
+                <form>
+                    <div class="register_but1">
+                        　手机号　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        　验证码　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        　　密码　<input type="password" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        确认密码　<input type="password" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        　　邮箱　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        　　学校　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but1">
+                        <input type="checkbox" class="form-checkbox"  name="username" /> 同意 用户协议与隐私政策
+                    </div>
+                    <div class="register_but1">
+                        <input type="button" class="btn " id="login" value="注&nbsp;&nbsp;册">
+                    </div>
+                </form>
+            </div>
+<!--            单位注册-->
+            <div class="register_but3" id="dw">
+                <form>
+                    <div class="register_but2">
+                        单位名称　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but2">
+                        　联系人　<input type="text" class="form-register" name="username" />
+                    </div>
+                    <div class="register_but2">
+                        联系电话　<input type="password" class="form-register" name="username" />
+                    </div>
+                    <div class="form-text">
+                        备注　<input type="textarea" class="form-textarea" name="text">
+                    </div>
+                    <div class="register_but2">
+                        <input type="checkbox" class="form-checkbox"  name="username" /> 同意 用户协议与隐私政策
+                    </div>
+                    <div class="register_but2">
+                        <input type="button" class="btn " id="log" value="注&nbsp;&nbsp;册">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        {include file="pub/footer"}
+
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="/static/index/js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            function changeDisplay(num){
+                console.log(num);
+                if (num == 1) { // 学员注册
+                    $('#xy').show();
+                    $('#dw').hide();
+                } else if (num == 2) { // 单位注册
+                    $('#xy').hide();
+                    $('#dw').show();
+
+                }
+            }
+        </script>
+</body>
+</html>

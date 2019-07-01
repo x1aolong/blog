@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放</title>
+    <link key="player" href="/static/index/css/palyer.css" rel="stylesheet" type="text/css" />
+    <link key="index" href="/static/index/css/header.css" rel="stylesheet" type="text/css" />
+    <link key="index" href="/static/index/css/footer.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        {include file="pub/heater"}
+
+
+        <div class="play">
+            <div class="play_left">
+                <div class="play_left_top">
+                    <p>神奇的世界</p>
+                </div>
+                <div class="play_left_cet"><img src="/static/index/images/TIM截图20190611145731.png"></div>
+                <div class="play_left_but">
+                    <p>
+                        <img src="/static/index/images/vx.jpg">
+                        <img src="/static/index/images/vb.jpg">
+                        <img src="/static/index/images/qq.jpg">
+
+                    </p>
+                </div>
+            </div>
+            <div class="play_right">
+                <div class="play_right_top">
+                    <ul>
+                        <li onClick="changeDisplay(1)">我的笔记</li>
+                        <li onClick="changeDisplay(2)">大家的笔记</li>
+                    </ul>
+                </div>
+                <div class="play_right_but" id="me">
+                    1
+                </div>
+                <div class="play_right_but" style="display: none"; id="dj">
+                    2
+                </div>
+            </div>
+        </div>
+
+        {include file="pub/footer"}
+
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="/static/index/js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            function changeDisplay(num){
+                console.log(num);
+                if (num == 1) { // 点击平语近人
+                    $('#me').show();
+                    $('#dj').hide();
+                } else if (num == 2) { // 点击党政学习
+                    $('#me').hide();
+                    $('#dj').show();
+                }
+            }
+        </script>
+</body>
+</html>

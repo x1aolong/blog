@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程购买</title>
+    <link key="teacher" href="/static/index/css/teacher.css" rel="stylesheet" type="text/css" />
+    <link key="teacher" href="/static/index/css/header.css" rel="stylesheet" type="text/css" />
+    <link key="teacher" href="/static/index/css/footer.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/static/index/css/swiper.min.css">
+</head>
+<body>
+        {include file="pub/heater"}
+        <div class="gm">
+            <div class="gm_image">
+                <a href="{:url('index/player/index')}"><img src="/static/index/img/4.jpg"></a>
+                <p>神奇的地方</p>
+            </div>
+            <div class="gm_image_right">
+                <div class="gm_image_right1"><p>神奇的地方</p></div>
+                <div class="gm_image_right2">
+                    <ul>
+                        <li>讲师：<a href="{:url('index/details/index')}">屠呦呦</a></li>
+                        <li>分类：政府公共管理</li>
+                        <li>时长：</li>
+                        <li>课件数：</li>
+                        <li>学时：</li>
+                        <li>获赞：</li>
+                        <li>发布时间：</li>
+                    </ul>
+                </div>
+                <div class="gm_image_right3"><p><span>$66</span> <a href="index">购买</a> </p></div>
+            </div>
+        </div>
+
+        <div class="gm_but">
+            <div class="gm_but_left">
+                <div class="gm_but_right_top1">
+                    <ul>
+                        <li onClick="changeDisplay(1)">课程详情</li>
+                        <li onClick="changeDisplay(2)">讲师简介</li>
+                        <li onClick="changeDisplay(3)">课程目录</li>
+                    </ul>
+                </div>
+                <div class="gm_but_right_top2" id="kcxq">1</div>
+                <div class="gm_but_right_top2" style="display: none"; id="jsjj">2</div>
+                <div class="gm_but_right_top2" style="display: none"; id="kcml">3</div>
+            </div>
+            <div class="gm_but_right">
+                <div class="gm_but_right_top">
+                    <p>主讲师</p>
+                    <p><img src="/static/index/images/tu.jpg"> <span> 屠呦呦</span></p>
+                </div>
+<!--                轮播图-->
+                <div class="gm_but_right_but">
+                    <div class="swiper-container swiper-container-h">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Horizontal Slide 1</div>
+                            <div class="swiper-slide">
+                                <div class="swiper-container swiper-container-v">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Vertical Slide 1</div>
+                                        <div class="swiper-slide">Vertical Slide 2</div>
+                                        <div class="swiper-slide">Vertical Slide 3</div>
+                                        <div class="swiper-slide">Vertical Slide 4</div>
+                                        <div class="swiper-slide">Vertical Slide 5</div>
+                                    </div>
+                                    <!--                     <div class="swiper-pagination swiper-pagination-v"></div> -->
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Horizontal Slide 3</div>
+                            <div class="swiper-slide">Horizontal Slide 4</div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination swiper-pagination-h"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {include file="pub/footer"}
+
+
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="/static/index/js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            function changeDisplay(num){
+                console.log(num);
+                if (num == 1) { // 点击平语近人
+                    $('#kcxq').show();
+                    $('#jsjj').hide();
+                    $('#kcml').hide();
+                } else if (num == 2) { // 点击党政学习
+                    $('#kcxq').hide();
+                    $('#jsjj').show();
+                    $('#kcml').hide();
+                } else if (num == 3) { // 点击政策指导
+                    $('#kcxq').hide();
+                    $('#jsjj').hide();
+                    $('#kcml').show();
+                }
+            }
+        </script>
+
+
+
+        <!-- Swiper JS -->
+        <script src="/static/index/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiperH = new Swiper('.swiper-container-h', {
+                pagination: '.swiper-pagination-h',
+                paginationClickable: true,
+                spaceBetween: 50
+            });
+        </script>
+</body>
+</html>

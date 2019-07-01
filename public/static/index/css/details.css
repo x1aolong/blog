@@ -1,0 +1,94 @@
+		/*头部*/
+		@charset "utf-8";
+		*{margin: 0;padding: 0;}
+		body{
+			width:100%;
+			/*height:5000px;*/
+			margin:0 auto;
+			background: #F2F2F2;
+			}
+	       /*讲师部*/
+	      .tacher_js{
+
+	      	width: 1200px;
+	      	height: 260px;
+	      	margin: 0 auto;
+	      	background-color: #FFFFFF;
+			box-shadow: 0px 15px 10px -15px #ccc;
+			margin-top: 160px;
+	      }
+	      .tacher_img{
+	      	height: 80%;
+	      	width: 180px;
+	      	float: left; 
+	      	margin-left: 60px;
+	      	margin-top: 25px;
+	      }
+	      .tacher_img img{
+	      	width: 100%;
+	      	height: 100%;
+	      }
+	      .tacher_name{
+	      	width: 100%;
+	      	height: 100px;
+	      }
+	      .tacher_name p span{
+	      	 line-height: 100px;
+	      }
+	      .tacher_img_right{
+	      	width: 900px;
+	      	height: 100%;
+	      	float: left;
+	      	margin-left: 50px;
+	      }
+	      .tacher_kc{
+	      	width: 1200px;
+	      	margin: 0 auto;
+	      	background-color: #FFFFFF;
+	      	margin-top: 30px;
+			  box-shadow: 0px 15px 10px -15px #ccc;
+	      }
+	      .tacher_zc{
+	      	width: 800px;
+	      	height: 136px;
+	      }
+	      .tacher_kc_name{
+	      	width: 100%;
+	      	height: 80px;
+	      }
+	      .tacher_kc_name li{
+	      	float: left;
+	      	list-style: none;
+	      	padding:0 15px;
+	      	line-height: 60px;
+			cursor:pointer;
+	      }
+		  .tacher_kc_name li:hover{
+			  color: #48a63e;
+		  }
+	      .tacher_kc_sp{
+	      	width: 100%;
+	      }
+	       .tacher_kc_sp1{
+	      	width: 100%;
+	      	height: 260px;
+	      }
+	      .tacher_kc_spimg{
+	      	width: 280px;
+	      	height: 62%;
+	      	float: left;
+	      	background-color: greenyellow;
+	      }
+	      .tacher_kc_sptitle{
+	      	width: 890px;
+	      	height: 62%;
+	      	float: left;
+	      	margin-left: 25px;
+	      }
+		  .tacher_kc_sptitle ul li{
+			float: left;
+			list-style: none;
+			padding: 0 15px;
+			margin-top: 120px;
+		  }
+	      

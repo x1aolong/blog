@@ -1,0 +1,144 @@
+.nav_header{
+    width:100%;
+    z-index: 100;
+    height:80px;
+    position:fixed;
+    top:0;left:0;
+    background-color: #FFFFFF;}
+
+
+.header_top{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/}
+
+
+.header_top_left{
+    height: 100%;
+    width: 200px;
+    float: left;
+}
+.header_top_left dt{
+    width: 100%;
+    height: 100%;
+}
+
+.header_log img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.header_nava{
+    margin-top: 30px;
+    height: 100%;
+    float: left;
+}
+
+
+.header_nava li{
+    list-style: none;
+    text-align: center;
+    float: left;
+    /*width: 80px;*/
+    margin-left: 60px;
+    height: 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.header_nava li:hover{
+    background-color: #76CB6C;
+}
+.header_nava li ul{
+    top: 100%;
+    left: 0%;
+    width: 80px;
+    display: none;/*二级菜单默认是不可见的*/
+    z-index: 1;
+}
+.header_nava li ul li{
+    width: 80px;
+}
+.header_nava li:hover ul{
+    display: block;
+}
+.header_nava  a{
+    width: 100%;
+    height: 100%;
+    text-decoration:none;
+    color: black;
+}
+
+.header_nav_right{
+    margin-top: 30px;
+    height: 100%;
+    float: right;/
+}
+
+.header_nav_right li{
+    list-style: none;
+    text-align: center;
+    float: left;
+    height: 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.header_nav_right li:hover{
+    background-color: #76CB6C;
+
+}
+
+.header_nav_right  a{
+    text-decoration:none;
+    color: black;
+}
+
+.sousuo{
+    width: 1200px;
+    height: 115px;
+    border: 1px solid transparent;
+    padding-top:80px;
+    margin: 0 auto;
+}
+.log{
+    margin: 20px;
+    width: 206px;
+    height: 60%;
+    float: left;
+}
+.log img{
+    width: 100%;
+    height: 100%;
+}
+.box{width: 750px;
+    height: 40px;
+    border: 2px solid #57bc4c;
+    margin-top: 40px;
+    float: left;
+    margin-left: 200px;
+}
+.box_input{
+    width: 100%;
+    height:100%;
+}
+.box_input input{
+    width: 643px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+.box_input a{
+    width: 107px;
+    height: 40px;
+    text-decoration:none;
+    background-color: #57bc4c;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    line-height: 40px;
+    color: #fff;
+}

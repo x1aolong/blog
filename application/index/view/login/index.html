@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link key="index" href="/static/index/css/footer.css" rel="stylesheet" type="text/css" />
+    <link key="index" href="/static/index/css/header.css" rel="stylesheet" type="text/css" />
+    <link key="index" href="/static/index/css/login.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+        {include file="pub/heater"}
+
+        <div class="login">
+            <div class="login_top">
+                <ul>
+                    <li onClick="changeDisplay(1)">扫码登录陆</li>
+                    <li onClick="changeDisplay(2)">用户登录</li>
+                </ul>
+            </div>
+            <div class="sm" id="sm">
+                <p> <img src="/static/index/images/ma.png"></p>
+                <span>打开<font color="#7fff00">求识APP</font>扫码登录</span>
+            </div>
+            <div class="user" id="user">
+                <form>
+                    <div class="user1">
+                        <input type="text" class="form-control" name="username" placeholder="&nbsp;&nbsp;邮箱&nbsp;用户名" />
+                    </div>
+                    <div class="user1">
+                        <input type="password" class="form-control" name="password" placeholder="&nbsp;&nbsp;密码" />
+                        <a href="">忘记密码?</a>
+                    </div>
+                    <div class="user1">
+                        <input type="button" class="btn " id="login" value="登&nbsp;&nbsp;录">
+                    </div>
+                </form>
+            </div>
+            <div class="order">
+                <span class="line"></span>
+                <span class="txt">第三方登录账号</span>
+                <span class="line"></span>
+            </div>
+            <div class="login3">
+                <img src="/static/index/images/qq1.jpg">
+                <img src="/static/index/images/vx1.jpg">
+                <img src="/static/index/images/vb1.jpg">
+            </div>
+        </div>
+
+
+        {include file="pub/footer"}
+
+
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="/static/index/js/carousel.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            function changeDisplay(num){
+                console.log(num);
+                if (num == 1) { // 扫码登陆
+                    $('#sm').show();
+                    $('#user').hide();
+                } else if (num == 2) { // 账号登录
+                    $('#sm').hide();
+                    $('#user').show();
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{include file="nav/_header" /}
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Page Breadcrumb -->
+        <div class="page-breadcrumbs">
+            <ul class="breadcrumb">
+                <li class="active">
+                    <i class="fa fa-home"></i>&nbsp;栏目管理
+                </li>
+                <li>栏目列表</li>
+            </ul>
+        </div>
+        <!-- /Page Breadcrumb -->
+        <!-- Page Body -->
+        <div class="page-body">
+            <a href="{:url('admin/cate/add')}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i>&nbsp;栏目添加</a>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="widget">
+                        <div class="widget-header">
+                            <span class="widget-caption">栏目列表</span>
+                            <div class="widget-buttons">
+                                <ul class="pagination pagination-sm">
+                                    <li class="disabled"><a href="#">«</a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">»</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget-body">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>栏目名称</th>
+                                        <th>分类排序</th>
+                                        <th>父级分类</th>
+                                        <th>分类创建时间</th>
+                                        <th>最后更新时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {volist name="cateList" id="vo"}
+                                    <tr>
+                                        <td>{$vo.id}</td>
+                                        <td>{$vo.name}</td>
+                                        <td>{$vo.sort}</td>
+                                        <td>
+                                            {if $vo.pid == 0} 顶级分类 {else} {$vo.pid} {/if}
+                                        </td>
+                                        <td>{$vo.create_time}</td>
+                                        <td>{$vo.update_time}</td>
+                                        <td>
+                                            <a href="#" class="btn btn-azure btn-xs">编辑</a>
+                                            <a href="#" class="btn btn-danger btn-xs">删除</a>
+                                        </td>
+                                    </tr>
+                                    {/volist}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Page Body -->
+    </div>
+    <!-- /Page Content -->
+
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+{include file="nav/_footer" /}
+
+</body>
+<!--  /Body -->
+</html>

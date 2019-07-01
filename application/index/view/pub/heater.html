@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="all" href="/static/index/css/style.css">
+    <script type="text/javascript" src="/static/index/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+</head>
+<body>
+<div class="nav_header">
+    <div class="header_top">
+
+        <dl class="header_top_left">
+            <dt>
+                <a href="/index.php/index" class="header_log"> <img src="/static/index/images/login.png"></a>
+            </dt>
+        </dl>
+        <ul class="header_nava">
+            <a href="{:url('index/index/index')}"><li>首页</li></a>
+            <a href="{:url('index/lister/index')}"><li>课程</li></a>
+            <a href="{:url('index/clas/index')}"><li>班级
+                <ul>
+                    <li>我的课程</li>
+                    <li>资料</li>
+                    <li>笔记</li>
+                </ul>
+            </li></a>
+            <a href="{:url('index/zixun/index')}"><li>资讯
+                <ul>
+                    <li>通知公告</li>
+                    <li>政策文件</li>
+                </ul>
+            </li></a>
+            <a href="{:url('index/study/index')}"><li>学习中心</li></a>
+            <li><a href="#">校企合作</a></li>
+        </ul>
+        <ul class="header_nav_right">
+            <a href="{:url('index/login/index')}"><li>登录</span></li></a>
+            <a href="{:url('index/login/register')}"><li>/注册</li></a>
+            <a href="{:url('index/svip/index')}"><li style="margin-left: 60px">会员中心</li></a>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+		@charset "utf-8"; 
+		*{margin: 0;padding: 0;}
+		body{ 
+			width:100%; 
+			margin:0 auto;
+			background: #F2F2F2;
+			}
+
+
+
+		.course_main{
+			height: 520px;
+			position:relative;
+			}
+		.course_screen{
+			width: 1200px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.course_menu{
+			min-width:1349px;
+			height: 40px;
+			background: #48a63e;
+			}
+		.course_cen{
+			width:560px; 
+			height: 100%;
+			 margin: 0 auto;
+			 text-align: center;
+			 }
+		.course_cen li{
+			float: left;
+			font-size: 14px;
+			list-style: none;
+			 }
+		.course_cen li a{
+			padding: 0 26px;
+			line-height: 40px;
+			color: #fff;
+			display: block;
+			text-decoration:none;
+			}
+		.course_left{
+			width:160px;
+			z-index: 30;
+			height:390px;
+			position:absolute;
+			top:0px;
+			}
+		.course_left_top{
+			width: 100%; 
+			height: 40px; 
+			color: #fff;
+			background: green;
+			text-align: center;
+			line-height: 40px;
+			}
+		.course_left_cen{
+			width:100%;
+			height:480px;
+			}
+
+
+
+
+		.w {
+			width:1200px;
+			margin:0 auto;
+		}
+		a {
+			text-decoration:inherit;
+		}
+		a,li {
+			list-style:none;
+		}
+		.cf:before,.cf:after,.clearfix:before,.clearfix:after {
+			content:"";
+			display:table;
+		}
+		.cf:after,.clearfix:after {
+			clear:both;
+		}
+		.cf,.clearfix {
+			clear:both;
+			*zoom:1;
+		}
+	
+		
+		/*banner上面浮层*/
+		.cat_wrap {
+			box-shadow:1px 1px 2px #bfbcbc;
+			box-shadow:0 -4px 8px 0 rgba(7,17,27,.1),0 4px 8px 0 rgba(7,17,27,.1);
+			background:rgba(255, 255, 255, 0.84);
+			width:160px;
+			position:absolute;
+			z-index:999;
+			
+		}
+		.cat_wrap .cat_title {
+			width:192px;
+			height:50px;
+			line-height:50px;
+			font-size:16px;
+			/*background:url('i/juxing.png') no-repeat;*/
+			margin-left:-6px;
+			margin-top:-15px;
+			background-size:100%;
+			color:#fff;
+			text-align:center;
+		}
+		.cat_wrap .cat_header {
+			min-height:470px;
+		}
+		.cat_wrap .cat_list div {
+			margin-top: 10px;
+			/*background:rgba(255, 255, 255, 0.84);*/
+			border-left:30px solid transparent;
+		}
+		.cat_wrap .cat_list div li {
+			float:left;
+			color:#323232;
+			font-size:14px;
+			margin:7px 0px;
+		}
+		.cat_wrap .cat_list div li:hover{
+			color:#48a63e;
+		}
+		.cat_wrap .cat_list div li:first-child {
+			margin-left:15px;
+			margin-right:10px;
+		}
+		.cat_wrap .cat_list {
+			cursor:pointer;
+		}
+		
+		/*移动上去的背景颜色*/
+		.cat_wrap .cat_list div.active {
+			width:130px;
+			padding-left:1px;
+			position:relative;
+			z-index:999;
+           background-color: rgba(213, 213, 230, 0.5);
+			border-right:none;
+		}
+		/*banner浮层滑动显示弹框*/
+				.cat_subcont {
+			display:none;
+		}
+		.cat_subcont.active {
+			display:block;
+		}
+		.cat_subcont .cat_sublist {
+			position:absolute;
+			z-index:998;
+			top:0px;
+			left:160px;
+			padding-top:5px;
+			min-height:475px;
+			width:500px;
+			background-color: rgba(213, 213, 230, 0.5);
+/*			border-top:1px solid #f9f9f9;*/
+			
+			/*border-bottom:1px solid #00a1ea;
+			border-right:1px solid #00a1ea;*/
+		}
+		.cat_subcont .cat_sublist .fore1 {
+			width:500px;
+		}
+		.cat_subcont .cat_sublist .fore1 .fore_list {
+			padding:0 30px;
+		}
+		/*.cat_subcont .cat_sublist .fore1 .fore_list h3 {
+			padding:5px;
+			border-bottom:1px solid red;
+		}
+		.cat_subcont .cat_sublist .fore1 .fore_list h3 a {
+			font-size:14px;
+			color:#00a1ea;
+		}*/
+		.cat_subcont .cat_sublist .fore1 .fore_list li {
+			float:left;
+			padding:15px;
+		}
+		.cat_subcont .cat_sublist .fore1 .fore_list li a {
+			font-size:14px;
+			color:#333;
+		}
+		.cat_subcont .cat_sublist .fore1 .fore_list li a:hover {
+			color:#48a63e;
+			text-decoration:underline;
+		}
+
+
+		/*人气排行*/
+		.rq{
+			width: 1200px;
+			height: 860px;
+			margin: 0 auto;
+			background: #FFFFFF;
+			margin-top: 80px;
+		}
+		.rq_font{
+			width: 380px;
+			height: 80px;
+			background-color: #F2F2F2;
+		}
+		.rq_top{
+			width: 100%;
+			height: 80px;
+			border-bottom: 1px solid #48a63e;
+		}
+		.rq_top p img{
+			width: 25px;
+			height: 25px;
+			vertical-align:bottom;
+			
+		}
+		.rq_top p{
+			font-size: 20px;
+			bottom:0px;
+			padding: 45px 15px;
+		}
+		.rq_top a{
+			float: right!important;
+			font-size: 10px;
+		}
+		.rq_cen li img{
+			width: 100%;
+			height: 214px;
+		}
+		.rq_cen{
+			width: 100%;
+			height: 601px;
+			margin-top: 15px;
+		}
+		.rq_cen p img{
+			width: 20px;
+			height: 20px;
+			vertical-align:bottom;
+			
+		}
+		.biao{
+			float: right!important;
+		}
+		.rq_cen li{
+			width: 380px;
+			height: 300px;
+			float: left;
+			padding: 0px 0px 80px 16px;
+			
+		}
+
+        .mj{
+        	margin: 0 auto;
+        	margin-top: 80px;
+        	width: 1200px;
+        	height: 465px;
+        	background: #FFFFFF;
+        	clear: both;
+        }
+		.mj_top{
+			width: 100%;
+			height: 80px;
+			border-bottom: 1px solid #48a63e;
+		}
+		.mj_top_left{
+			width: 275px;
+			height: 100%;
+			float: left;
+		}
+		.mj_top_left p{
+			padding: 45px 15px;
+			font-size: 20px;
+		}
+		.mj_top img{
+			width: 25px;
+			height: 25px;
+			vertical-align:bottom;
+		}
+		.mj_top_right{
+			width: 920px;
+			height: 100%;
+			float: left;
+		}
+		.mj_top_right span{
+			cursor:pointer;
+			
+		}
+		.mj_top_right span:hover{
+			color: #48a63e;
+		}
+		.mj_top_right li{
+			float: left;
+			padding: 45px 15px;
+			
+			}
+		.mj_lb{
+			width:275px;
+			height: 330px;
+			border: 1px solid red;
+			margin-top: 30px;
+			float: left;
+		}
+		/*.mj_lbt{
+			margin: 0 auto;
+			width: 1900px;
+    		position: relative;
+    		height: 350px;
+    		overflow: hidden;
+    		margin-left: 0 auto;
+}*/
+		.mj_right{
+			width: 900px;
+			height: 330px;
+			float: right;
+			margin-top: 30px;
+		}
+		.mj_right_top{
+			width: 100%;
+			height: 50px;
+			margin-top: 20px;
+		}
+		.mj_right_top img{
+			width: 20px;
+			height: 25px;
+			vertical-align:bottom;
+			padding: 0 0 0 22px;
+		}
+		.mj_right_btn{
+			width: 100%;
+			height: 260px;
+		}
+		.mj_right_btn li{
+			width: 269px;
+			height: 255px;
+			float: left;
+			padding: 0 0 0 22px;
+		}
+		.mj_right_btn img{
+			width: 100%;
+			height: 153px;
+		}
+		.school{
+			width: 1200px;
+			height: 330px;
+			margin: 0 auto;
+			background: #FFFFFF;
+			margin-top: 80px;
+		}
+		.school_top{
+			width: 100%;
+			height: 60px;
+			text-align: center;
+			margin-top: 30px;
+			border-bottom: 1px solid #48a63e;
+		}
+		.school_top p{
+			padding: 30px 15px;
+		}
+		.school_btn{
+			width: 100%;
+			height: 209px;
+			margin-top: 30px;
+		}
+		.school_btn li{
+			width: 271px;
+			height: 207px;
+			float: left;
+			padding: 0 0 0 22px;
+		}
+		.school_btn img{
+			width: 100%;
+			height: 100%;
+		}
+
+
+/*		轮播图*/
+
